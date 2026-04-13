@@ -92,7 +92,8 @@ const Skills = ({ darkMode }) => {
                 color: darkMode ? "#d1d5db" : "#4b5563",
               }}
             >
-              Skilled in creating dynamic and responsive UIs using modern frontend tools.
+              Skilled in creating dynamic and responsive UIs using modern
+              frontend tools.
             </p>
           </div>
           <div
