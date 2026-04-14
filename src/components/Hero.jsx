@@ -3,7 +3,7 @@ import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
 import hero from "../assets/hero5.png";
 import hi from "../assets/hi.png";
-import CV from "../assets/Akash_Resume.pdf";
+import CV from "../assets/_Akash_Resume.pdf";
 import { DownloadIcon, Mail } from "lucide-react";
 const Hero = ({ darkMode }) => {
   const socialIcons = [
