@@ -55,7 +55,7 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };
-  
+
   return (
     <div
       className={
@@ -68,8 +68,9 @@ function App() {
         toastOptions={{
           style: {
             background: darkMode
-              ? "linear-gradient(to bottom right, #fed7aa, #ffffff)":"linear-gradient(to bottom right, #374151, #000000)",
-            color: darkMode ? "#000" : "#fff",
+              ? "linear-gradient(to bottom right, #374151, #000000)"
+              : "linear-gradient(to bottom right, #fed7aa, #ffffff)",
+            color: darkMode ? "#fff" : "#000",
           },
         }}
       />
