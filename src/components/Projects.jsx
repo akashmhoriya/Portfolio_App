@@ -1,6 +1,6 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
+import project1 from "../assets/project_1.png";
+import project2 from "../assets/project_2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
@@ -9,17 +9,21 @@ const Projects = ({ darkMode }) => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt itaque, sapiente expedita totam magnam natus ipsum amet reiciendis accusantium voluptatum.",
+      title: "CineVault",
+      desc: "CineVault is a modern movie web application designed to help users discover popular, top-rated, and upcoming films. It fetches real-time movie data from an external API to keep content up to date.",
       image: project1,
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["React", "TMDB API"],
+      git_link:"https://github.com/akashmhoriya/CineVault",
+      demo_link:"https://cine-vault-kappa.vercel.app/",
     },
     {
       id: 2,
-      title: "Fitness Tracker App",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt itaque, sapiente expedita totam magnam natus ipsum amet reiciendis accusantium voluptatum.",
+      title: "Agency-AI App",
+      desc: "Agency AI is a modern web application designed to showcase AI-driven services and solutions with a clean, professional interface. The app focuses on delivering a professional and engaging user experience.",
       image: project2,
-      tags: ["React Native", "Firebase"],
+      tags: ["React", "Tailwind", "Framer Motion", "Web3Forms"],
+      git_link:"https://github.com/akashmhoriya/AgencyAI",
+      demo_link:"https://agency-ai-omega-beige.vercel.app/",
     },
     {
       id: 3,
@@ -141,7 +145,9 @@ const Projects = ({ darkMode }) => {
                 </div>
                 <div className="flex gap-2">
                   <a
-                    href="#"
+                    href={project.git_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       backgroundColor: darkMode ? "#374151" : "#f3f4f6",
                       color: darkMode ? "white" : "#374151",
@@ -154,7 +160,9 @@ const Projects = ({ darkMode }) => {
                     <span>Code</span>
                   </a>
                   <a
-                    href="#"
+                    href={project.demo_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       background: "linear-gradient(to right, #f97316, #f59e0b)",
                     }}
@@ -173,7 +181,9 @@ const Projects = ({ darkMode }) => {
         </div>
         <div className="text-center mt-10">
           <a
-            href="#"
+            href="https://github.com/akashmhoriya?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               background: "linear-gradient(to right, #f97316, #f59e0b)",
             }}
