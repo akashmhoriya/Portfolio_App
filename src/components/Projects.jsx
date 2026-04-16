@@ -32,7 +32,7 @@ const Projects = ({ darkMode }) => {
       image: project3,
       tags: [
         "React",
-        "Tailwind",
+        "React Router",
         "LLM Integration",
         "Puter AI",
         "PDF.js",
