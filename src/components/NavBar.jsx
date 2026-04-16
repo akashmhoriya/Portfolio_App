@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Sun, Moon } from "lucide-react";
 import { Menu, X } from "lucide-react";
+import { useEffect } from "react";
 
 const NavBar = ({ darkMode, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
@@ -41,6 +42,33 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
     setActiveSection(itemName.toLowerCase());
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navItems.map((item) =>
+        document.getElementById(item.name.toLowerCase()),
+      );
+
+      let current = "";
+
+      sections.forEach((section) => {
+        if (section) {
+          const sectionTop = section.offsetTop - 100;
+          if (window.scrollY >= sectionTop) {
+            current = section.id;
+          }
+        }
+      });
+
+      if (current) {
+        setActiveSection(current);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="flex justify-center w-full fixed z-50 mt-4">
@@ -82,7 +110,7 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
                 >
                   {item.name}
                 </motion.span>
-                {activeSection === item.name.toLowerCase && (
+                {activeSection === item.name.toLowerCase() && (
                   <motion.div
                     layoutId="navbar-indicator"
                     className={`absolute -bottom-1 left-0 right-0 h-0.5 bg-linear-to-r rounded-full ${colors.indicator}`}
