@@ -1,7 +1,7 @@
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import project1 from "../assets/project_1.png";
 import project2 from "../assets/project_2.png";
-import project3 from "../assets/project3.png";
+import project3 from "../assets/project_3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
@@ -13,8 +13,8 @@ const Projects = ({ darkMode }) => {
       desc: "CineVault is a modern movie web application designed to help users discover popular, top-rated, and upcoming films. It fetches real-time movie data from an external API to keep content up to date.",
       image: project1,
       tags: ["React", "TMDB API"],
-      git_link:"https://github.com/akashmhoriya/CineVault",
-      demo_link:"https://cine-vault-kappa.vercel.app/",
+      git_link: "https://github.com/akashmhoriya/CineVault",
+      demo_link: "https://cine-vault-kappa.vercel.app/",
     },
     {
       id: 2,
@@ -22,15 +22,17 @@ const Projects = ({ darkMode }) => {
       desc: "Agency AI is a modern web application designed to showcase AI-driven services and solutions with a clean, professional interface. The app focuses on delivering a professional and engaging user experience.",
       image: project2,
       tags: ["React", "Tailwind", "Framer Motion", "Web3Forms"],
-      git_link:"https://github.com/akashmhoriya/AgencyAI",
-      demo_link:"https://agency-ai-omega-beige.vercel.app/",
+      git_link: "https://github.com/akashmhoriya/AgencyAI",
+      demo_link: "https://agency-ai-omega-beige.vercel.app/",
     },
     {
       id: 3,
-      title: "Content Generator",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt itaque, sapiente expedita totam magnam natus ipsum amet reiciendis accusantium voluptatum.",
+      title: "RESUMIFY - AI Resume Analyzer",
+      desc: "An AI-powered resume analyzer that evaluates resumes, provides ATS scores, and suggests improvements to help users optimize their resumes for better job opportunities.",
       image: project3,
-      tags: ["Python", "openAI"],
+      tags: ["React", "Router", "Tailwind", "Puter", "Zustand", "AI APIs"],
+      git_link: "https://github.com/akashmhoriya/AI-Resume-Analyzer",
+      demo_link: "https://ai-resume-analyzer-gamma-ecru.vercel.app/",
     },
     {
       id: 4,
@@ -63,7 +65,7 @@ const Projects = ({ darkMode }) => {
       className="relative py-24"
     >
       <div className="container mx-auto px-4">
-        <div className="text-center mb-20" data-aos='fade-up'>
+        <div className="text-center mb-20" data-aos="fade-up">
           <h2
             className="text-3xl sm:text-4xl font-bold mb-3"
             style={{
