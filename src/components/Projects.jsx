@@ -2,7 +2,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import project1 from "../assets/project_1.png";
 import project2 from "../assets/project_2.png";
 import project3 from "../assets/project_3.png";
-import project4 from "../assets/project4.png";
+import project4 from "../assets/project_4.png";
 import project5 from "../assets/project5.png";
 import project6 from "../assets/project6.png";
 const Projects = ({ darkMode }) => {
@@ -19,7 +19,7 @@ const Projects = ({ darkMode }) => {
     {
       id: 2,
       title: "Agency-AI App",
-      desc: "Agency AI is a modern web application designed to showcase AI-driven services and solutions with a clean, professional interface. The app focuses on delivering a professional and engaging user experience.",
+      desc: "Agency AI is a modern web application designed to showcase AI-driven services and solutions with a clean, professional interface. The app focuses on delivering a professional user experience.",
       image: project2,
       tags: ["React", "Tailwind", "Framer Motion", "Web3Forms"],
       git_link: "https://github.com/akashmhoriya/AgencyAI",
@@ -43,10 +43,12 @@ const Projects = ({ darkMode }) => {
     },
     {
       id: 4,
-      title: "Dashboard",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt itaque, sapiente expedita totam magnam natus ipsum amet reiciendis accusantium voluptatum.",
+      title: "SPYLT — Awwwards Animated Website",
+      desc: "Created a clone of the SPYLT Awwwards website using React, Tailwind CSS, and GSAP, featuring smooth scroll animations, interactive transitions, responsive modern UI.",
       image: project4,
-      tags: ["Vue.js", "Chart.js"],
+      tags: ["React", "Tailwind", "GSAP"],
+      git_link: "https://github.com/akashmhoriya/SPYLT_CLONE-awwwards-website",
+      demo_link: "https://gsap-awwwards-ebon.vercel.app/",
     },
     {
       id: 5,
