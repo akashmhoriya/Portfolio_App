@@ -48,7 +48,10 @@ const About = ({ darkMode }) => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            I am a frontend developer and B.Tech graduate, passionate about building responsive, user-friendly, and visually appealing web applications. I enjoy turning ideas into real-world projects using modern technologies and continuously improving my skills.
+            I am a frontend developer and B.Tech graduate, passionate about
+            building responsive, user-friendly, and visually appealing web
+            applications. I enjoy turning ideas into real-world projects using
+            modern technologies and continuously improving my skills.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
             {/* Education */}
@@ -98,9 +101,10 @@ const About = ({ darkMode }) => {
             </div>
           </div>
           <button
-            className={`w-full sm:w-auto inline-flex items-center  justify-center border-orange-500 border-2 py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${darkMode?'text-white bg-orange-500/10':'text-gray-800 bg-white/90'}`}
-          data-aos='fade-up'
-          data-aos-delay='800'>
+            className={`w-full sm:w-auto inline-flex items-center  justify-center border-orange-500 border-2 py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${darkMode ? "text-white bg-orange-500/10" : "text-gray-800 bg-white/90"}`}
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
             Learn More
           </button>
         </article>

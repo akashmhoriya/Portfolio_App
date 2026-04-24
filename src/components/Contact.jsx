@@ -26,6 +26,7 @@ const Contact = ({ darkMode }) => {
       toast.error(error.message);
     }
   };
+
   return (
     <section
       id="contact"
