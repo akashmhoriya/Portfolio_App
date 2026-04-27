@@ -64,6 +64,7 @@ function App() {
           : "bg-linear-to-br from-gray-50 to-blue-50 min-h-screen"
       }
     >
+
       <Toaster
         toastOptions={{
           style: {
@@ -74,6 +75,7 @@ function App() {
           },
         }}
       />
+      
       <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero darkMode={darkMode} />
       <About darkMode={darkMode} />
